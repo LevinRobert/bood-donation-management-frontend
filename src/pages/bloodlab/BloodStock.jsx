@@ -22,7 +22,7 @@ const BloodStock = () => {
   });
 
   const token = localStorage.getItem("token");
-  const API_URL = "http://localhost:8000/api/blood-lab";
+  const API_URL = "https://blood-donation-backend-694682083942.asia-south1.run.app/api/blood-lab";
 
   // Blood types for dropdown
   const bloodTypes = ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"];

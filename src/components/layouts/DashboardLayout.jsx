@@ -146,7 +146,7 @@ const DashboardLayout = ({ userRole = "donor" }) => {
       
       while (attempt < maxRetries) {
         try {
-          const res = await fetch("http://localhost:8000/api/auth/profile", {
+          const res = await fetch("https://blood-donation-backend-694682083942.asia-south1.run.app/api/auth/profile", {
             headers: { Authorization: `Bearer ${token}` },
           });
 

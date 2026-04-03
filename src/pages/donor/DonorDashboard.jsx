@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 import { toast } from "react-hot-toast";
 
-const API_URL = "http://localhost:8000/api/donor";
+const API_URL = "https://blood-donation-backend-694682083942.asia-south1.run.app/api/donor";
 
 const DonorDashboard = () => {
   const [dashboard, setDashboard] = useState(null);

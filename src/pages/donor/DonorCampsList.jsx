@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 
 // NOTE: Ensure this URL matches your running backend API endpoint
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://blood-donation-backend-694682083942.asia-south1.run.app/api";
 
 const STATUS_OPTIONS = [
   { value: "all", label: "All Camps" },

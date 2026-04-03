@@ -98,7 +98,7 @@ function FacultyRegister() {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:8000/api/auth/register", {
+      const response = await fetch("https://blood-donation-backend-694682083942.asia-south1.run.app/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

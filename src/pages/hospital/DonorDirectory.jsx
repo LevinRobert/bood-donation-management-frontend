@@ -53,7 +53,7 @@ const DonorDirectory = () => {
       });
 
       const res = await axios.get(
-        `http://localhost:8000/api/hospital/donors?${queryParams}`,
+        `https://blood-donation-backend-694682083942.asia-south1.run.app/api/hospital/donors?${queryParams}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -84,7 +84,7 @@ const DonorDirectory = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        `http://localhost:8000/api/hospital/donors/${donorId}/contact`,
+        `https://blood-donation-backend-694682083942.asia-south1.run.app/api/hospital/donors/${donorId}/contact`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );

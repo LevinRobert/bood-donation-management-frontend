@@ -26,7 +26,7 @@ const FacilityApproval = () => {
   const [refreshing, setRefreshing] = useState(false);
 
   const token = localStorage.getItem("token");
-  const API_URL = "http://localhost:8000/api/admin";
+  const API_URL = "https://blood-donation-backend-694682083942.asia-south1.run.app/api/admin";
 
   // Fetch pending facilities
   const fetchPendingFacilities = async (showToast = false) => {

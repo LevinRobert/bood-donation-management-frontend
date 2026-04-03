@@ -18,7 +18,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/register", formData);
+      const res = await axios.post("https://blood-donation-backend-694682083942.asia-south1.run.app/api/auth/register", formData);
       alert("✅ Registered Successfully!");
       navigate("/login"); // redirect after success
     } catch (err) {

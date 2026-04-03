@@ -62,7 +62,7 @@ const BloodCamps = () => {
 
   const token = localStorage.getItem("token");
   // Fixed API URL - removed /blood-lab if it doesn't exist
-  const API_URL = "http://localhost:8000/api/blood-lab";
+  const API_URL = "https://blood-donation-backend-694682083942.asia-south1.run.app/api/blood-lab";
 
   console.log("🔧 BloodCamps Component State:", {
     campsCount: camps.length,

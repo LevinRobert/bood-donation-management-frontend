@@ -41,7 +41,7 @@ const HospitalDashboard = () => {
         }
 
         // Fetch hospital profile
-        const profileRes = await fetch("http://localhost:8000/api/facility/profile", {
+        const profileRes = await fetch("https://blood-donation-backend-694682083942.asia-south1.run.app/api/facility/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -61,12 +61,12 @@ const HospitalDashboard = () => {
         }
 
         // Fetch blood stock
-        const stockRes = await axios.get("http://localhost:8000/api/hospital/blood/stock", {
+        const stockRes = await axios.get("https://blood-donation-backend-694682083942.asia-south1.run.app/api/hospital/blood/stock", {
           headers: { Authorization: `Bearer ${token}` },
         });
 
         // Fetch blood requests
-        const requestsRes = await axios.get("http://localhost:8000/api/hospital/blood/requests", {
+        const requestsRes = await axios.get("https://blood-donation-backend-694682083942.asia-south1.run.app/api/hospital/blood/requests", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

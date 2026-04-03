@@ -20,7 +20,7 @@ const HospitalBloodStock = () => {
       setLoading(true);
       const token = localStorage.getItem("token");
       // In HospitalBloodStock component, change the API call:
-const res = await axios.get("http://localhost:8000/api/hospital/blood/stock", {
+const res = await axios.get("https://blood-donation-backend-694682083942.asia-south1.run.app/api/hospital/blood/stock", {
   headers: { Authorization: `Bearer ${token}` },
 });
       

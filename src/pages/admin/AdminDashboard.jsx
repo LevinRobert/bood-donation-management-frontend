@@ -34,7 +34,7 @@ const AdminDashboard = () => {
 
       console.log("🔄 Fetching admin dashboard stats...");
       
-      const res = await fetch("http://localhost:8000/api/admin/dashboard", {
+      const res = await fetch("https://blood-donation-backend-694682083942.asia-south1.run.app/api/admin/dashboard", {
         headers: { 
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'

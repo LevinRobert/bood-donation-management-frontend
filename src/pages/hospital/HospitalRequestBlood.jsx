@@ -20,7 +20,7 @@ const HospitalRequestBlood = () => {
       try {
         setLabsLoading(true);
         const token = localStorage.getItem("token");
-        const res = await axios.get("http://localhost:8000/api/facility/labs", {
+        const res = await axios.get("https://blood-donation-backend-694682083942.asia-south1.run.app/api/facility/labs", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setLabs(res.data.labs || []);
@@ -43,7 +43,7 @@ const HospitalRequestBlood = () => {
       const token = localStorage.getItem("token");
 
       const response = await axios.post(
-        "http://localhost:8000/api/hospital/blood/request",
+        "https://blood-donation-backend-694682083942.asia-south1.run.app/api/hospital/blood/request",
         form,
         { headers: { Authorization: `Bearer ${token}` } }
       );

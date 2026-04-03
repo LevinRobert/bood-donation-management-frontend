@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 import { toast } from "react-hot-toast";
 
-const API_URL = "http://localhost:8000/api/blood-lab";
+const API_URL = "https://blood-donation-backend-694682083942.asia-south1.run.app/api/blood-lab";
 
 const BloodLabDashboard = () => {
   const [dashboard, setDashboard] = useState(null);

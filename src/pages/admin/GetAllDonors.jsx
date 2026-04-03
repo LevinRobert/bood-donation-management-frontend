@@ -20,7 +20,7 @@ import {
   ChevronUp
 } from 'lucide-react';
 
-const API_URL = "http://localhost:8000/api/admin";
+const API_URL = "https://blood-donation-backend-694682083942.asia-south1.run.app/api/admin";
 
 function GetAllDonors() {
   const [donors, setDonors] = useState([]);
